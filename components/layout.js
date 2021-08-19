@@ -60,7 +60,7 @@ export default function Layout({ children, home }) {
                     </>
                 )}
             </header>
-            <Link href="/ammibos"><a>AmiiBos</a></Link>
+            <Link href="/amiibos"><a>AmiiBos</a></Link>
             <main>{children}</main>
 
             {!home && (
