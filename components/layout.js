@@ -60,7 +60,9 @@ export default function Layout({ children, home }) {
                     </>
                 )}
             </header>
+            <Link href="/ammibos"><a>AmiiBos</a></Link>
             <main>{children}</main>
+
             {!home && (
                 <div className={styles.backToHome}>
                     <Link href="/">
