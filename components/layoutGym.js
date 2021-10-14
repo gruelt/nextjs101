@@ -4,10 +4,10 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Waf'
+const name = 'Brochure Ufolep'
 export const siteTitle = 'My Nextjs Website'
 
-export default function Layout({ children, home }) {
+export default function LayoutGym({ children, home }) {
     return (
         <div className={styles.container}>
             <Head>
@@ -30,13 +30,13 @@ export default function Layout({ children, home }) {
                     <>
                         <Image
                             priority
-                            src="/images/dog.jpg"
-                            className={utilStyles.borderCircle}
-                            height={144}
-                            width={144}
+                            src="/images/fjep.png"
+                            // className={utilStyles.borderCircle}
+                            height={100}
+                            width={250}
                             alt={name}
                         />
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                        <h1 className={utilStyles.headingXl}>{name}</h1>
                     </>
                 ) : (
                     <>
@@ -60,7 +60,7 @@ export default function Layout({ children, home }) {
                     </>
                 )}
             </header>
-            <Link href="/amiibos"><a>AmiiBos</a></Link>
+
             <main>{children}</main>
 
             {!home && (
